@@ -1,0 +1,22 @@
+{
+  "name": "hex-generator",
+  "version": "1.0.0",
+  "description": "generate a random 8 digit hexadecimal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurtdnyc/hex-generator.git"
+  },
+  "author": "Kurt Dawiec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurtdnyc/hex-generator/issues"
+  },
+  "homepage": "https://github.com/kurtdnyc/hex-generator#readme",
+  "dependencies": {
+    "wordlist-english": "^1.2.1"
+  }
+}
