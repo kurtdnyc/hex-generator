@@ -7,7 +7,7 @@ function generateHex(){
     let hex = '0x';
 
     // there are (15^8)-1 = 2562890624 possible 8 digit hex combinations 
-    if(localStorage.entries >= 4){
+    if(localStorage.entries >= 2562890624){
         // every possible combination has been generated
         // reset storage and continue
         localStorage = {entries : 0};
