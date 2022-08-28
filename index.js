@@ -1,6 +1,8 @@
 const fs = require('fs');
 const hexSpeak = require('./hexspeak.js');
 const everyEnglishWord = require('wordlist-english');
+
+// ideally; storage would live in a database
 var localStorage = JSON.parse(fs.readFileSync('storage.json'));
 
 function generateHex(){
@@ -14,6 +16,7 @@ function generateHex(){
     }
     
 
+    // generate the actual hex code
 	for (let i = 0; i < 8; i++) {
 		hex += Math.floor(Math.random() * 15).toString(16);
 	}
@@ -31,7 +34,7 @@ function generateHex(){
             return generateHex();
         }
     } else{
-        // hex has already been generared; run again
+        // hex has already been generated; run again
         return generateHex();
     }
 }
@@ -49,7 +52,7 @@ function isHexAllowed(hex){
     let set = new Set(arr.slice(2,10));
 
     // handle 8 of the same characters
-    if(set.size === 1) return false;2
+    if(set.size === 1) return false;
 
     return true;
 }
